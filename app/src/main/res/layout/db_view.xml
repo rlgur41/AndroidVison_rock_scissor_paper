@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp">
+
+    <TextView
+        android:id = "@+id/human"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text ="Human"/>
+    <TextView
+        android:id = "@+id/com"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text ="Computer"/>
+
+    <TextView
+        android:id="@+id/win"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Win"
+        android:layout_below="@+id/com" />
+
+    <TextView
+        android:id="@+id/humanWinCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_below="@id/human"
+        />
+
+    <TextView
+        android:id="@+id/draw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/win"
+        android:layout_centerHorizontal="true"
+        android:text="Draw"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/humanDrawCount"
+        android:layout_below="@id/humanWinCount" />
+    <TextView
+        android:id="@+id/defeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Defeat"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/draw" />
+
+    <TextView
+        android:id="@+id/humanDefeatCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_below = "@+id/humanDrawCount" />
+
+
+    <TextView
+        android:id="@+id/scissors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/defeat"
+        android:layout_centerHorizontal="true"
+        android:text="가위"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/humanScount"
+        android:layout_below="@id/humanDefeatCount"
+         />
+    <TextView
+        android:id="@+id/rock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/scissors"
+        android:text="바위"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/humanRcount"
+        android:layout_below="@id/humanScount"
+        />
+    <TextView
+        android:id="@+id/paper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rock"
+        android:layout_centerHorizontal="true"
+        android:text="보"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/humanPcount"
+        android:layout_below="@+id/humanRcount"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/comWinCount"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/com"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/comDrawCount"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/comWinCount"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/comDefeatCount"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/comDrawCount"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/comScount"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/comDefeatCount"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/comRcount"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/comScount"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/comPcount"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/comRcount"
+        />
+
+
+    <ImageView
+        android:id = "@+id/humanRst"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/paper"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id = "@+id/comRst"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/paper"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true" />
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="처음으로 돌아가기"
+        android:id="@+id/retHome"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/com" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="VS"
+        android:id="@+id/textView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="결과"
+        android:id="@+id/winner"
+        android:layout_marginTop="47dp"
+        android:layout_below="@+id/comRst"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="reset"
+        android:id="@+id/reset"
+        android:layout_above="@+id/retHome"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

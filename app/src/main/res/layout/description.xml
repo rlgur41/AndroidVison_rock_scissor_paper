@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:backgroundTint="@color/colorPrimary"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="40dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text ="[ 게임 방법 ] "/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src ="@drawable/test"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize = "14dp"
+        android:text= "플레이 방법 : 손을 카메라 중앙에 비치고, 손 주변을 한번 터치합니다.\n\n1 : 현재 보이는 영상을 이진화 한 영상입니다\n2 : 감지되는 사물의 민감도를 설정합니다\n3 : 가위바위보를 결정합니다\n4 : 현재 인식된 가위바위보 상태를 표시합니다\n">
+
+    </TextView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text = "뒤로가기"
+        android:id = "@+id/back"
+        android:textSize="15dp"/>
+
+</LinearLayout>
